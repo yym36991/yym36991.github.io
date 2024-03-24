@@ -188,6 +188,295 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/24/level_one/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="answer_yym">
+      <meta itemprop="description" content="且随疾风前行">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="山河无恙 烟火寻常">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/24/level_one/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-24 09:40:12 / 修改时间：09:45:43" itemprop="dateCreated datePublished" datetime="2024-03-24T09:40:12+08:00">2024-03-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一-海龟代码"><a href="#一-海龟代码" class="headerlink" title="一. 海龟代码"></a>一. 海龟代码</h1><p>(基本考过都在下面)</p>
+<p>1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None, bg&#x3D;None)，</p>
+<p>参数分别为画布的宽(单位像素), 高, 背景颜色。</p>
+<p>2.turtle.setup(width&#x3D;0.5, height&#x3D;0.75, startx&#x3D;None, starty&#x3D;None)宽高xy</p>
+<ol start="3">
+<li><p>turtle.pensize()：设置画笔的宽度；</p>
+</li>
+<li><p>turtle.pencolor()：画笔颜色</p>
+</li>
+</ol>
+<p>5.turtle.speed(speed)：画笔速度</p>
+<p>6..turtle.forward(100) 向前100像素</p>
+<p>7..turtle.backward(100) #后退100像素</p>
+<p>8.turtle.right(90) 顺时针移90°</p>
+<p>9..turtle.left(90) 逆时针转动90</p>
+<p>10.turtle.pendown()   移动时绘制图形，缺省时也为绘制</p>
+<p>11.turtle.goto(x,y)     将画笔移动到坐标为x,y的位置</p>
+<p>12.turtle.penup()     提起笔移动，不绘制图形，用于另起一个地方绘制</p>
+<p>13.turtle.setx( ) 将当前x轴移动到指定位置</p>
+<p>14.turtle.sety( ) 将当前y轴移动到指定位置</p>
+<p>15.turtle.setheading(angle) 设置当前朝向为angle角度</p>
+<p>16.turtle.home() 设置当前画笔位置为原点，朝向东。</p>
+<p>17.turtle.circle(50)绘制半径为50的圆</p>
+<p>18.turtle.circle(50,360,3)#绘制圆的内切三角形</p>
+<p>19.turtle.dot(r,”color”) 绘制一个指定半径和颜色的圆点</p>
+<p>20.turtle.fillcolor(colorstring) #绘制图形的填充颜色</p>
+<p>21.turtle.color(color1, color2) #同时设置pencolor&#x3D;color1, fillcolor&#x3D;color2</p>
+<p>22.turtle.filling() #返回当前是否在填充状态</p>
+<p>23.turtle.begin_fill() #准备开始填充图形</p>
+<p>24.turtle.end_fill() #填充完成</p>
+<p>25.turtle.hideturtle() #隐藏画笔的turtle形状</p>
+<p>26.turtle.showturtle() #显示画笔的turtle形状</p>
+<p>27.turtle.shape(‘turtle’)：设置小乌龟的形状为乌龟， arrow：箭头，turtle：龟，circle：圆，square：正方形，triangle：三角形，classic：经典</p>
+<p>28.turtle.stamp()在当前位置印制小乌龟形状（光标指针形状），返回印章id</p>
+<h1 id="二-python基础知识"><a href="#二-python基础知识" class="headerlink" title="二. python基础知识"></a>二. python基础知识</h1><p>1.python基础界面以及操作，保存，新建文件</p>
+<p>2.python提示符 ：</p>
+<pre><code> &gt;&gt;&gt;提示符，格式缩进（交互模式运行符）
+</code></pre>
+<p>3.python常见编程环境：</p>
+<pre><code>记事本，
+
+Notepad++
+
+SublimeTexts3,
+
+Visual Studio Code,
+
+Jupyter Notebook...
+</code></pre>
+<p>4.操作常用快捷键：</p>
+<pre><code>ctrl+s保存，ctrl+n新建
+</code></pre>
+<p>5.python注释方法<br>    单行注释# </p>
+<pre><code>多行注释’’’ 和”””（三引号）
+</code></pre>
+<p>6.变量命名规则：</p>
+<pre><code>①字母，数字，下划线组成
+
+②不能以数字开头
+
+③不能包含空格或其它特殊符号
+
+④避免关键字或函数
+
+⑤区分大小写
+
+⑥简短且具有描述性（不是硬性要求）
+</code></pre>
+<ol start="7">
+<li><p>保留字(关键字)【一级考察18个】</p>
+<p>  and as def del elif else False for from if import in        is  None not or True while（注意关键字大小写）</p>
+</li>
+</ol>
+<p>8.输入输出函数</p>
+<pre><code>输入：input() 输入的数值返回字符串类型，如果要与整数进行运算需要转换成整型
+</code></pre>
+<p>例 a&#x3D;int(input(“请输入一个数字：”))</p>
+<pre><code>输出：print()打印，print()函数自动换行，经常考按照格式输出
+</code></pre>
+<p>例 print(“较大数是:”，a)#逗号隔开即可同时输出字符串和整数类型</p>
+<p>8-1.格式化输出</p>
+<pre><code>%s格式化输出字符串
+
+%d格式化输出整数
+
+%.2f格式化输出2位小数的浮点数,%f默认保留6位小数（这个经常在运算保留几位小数的时候考）
+</code></pre>
+<p>例 a&#x3D;1</p>
+<pre><code>print(&quot;a:%d&quot;%a)
+</code></pre>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>a:1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="三-数据类型"><a href="#三-数据类型" class="headerlink" title="三. 数据类型"></a>三. 数据类型</h1><p>1.可变数据类型：</p>
+<pre><code>list，dictionary，set
+</code></pre>
+<p>  不可变数据类型：</p>
+<pre><code>number，string，tuple
+</code></pre>
+<p>2.number：</p>
+<pre><code>整数（int），布尔型（bool），浮点数（float），复数（complex）
+</code></pre>
+<p>3.字符串的加法和乘法</p>
+<p>例 print(“a”+”a”)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>aa</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>print(“a”*3)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>aaa</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>4.数据拼接</p>
+<pre><code>相同数据&quot;+&quot;
+</code></pre>
+<p>5.引号用法  ’ 和”</p>
+<p>6.转义字符</p>
+<pre><code>\n换行，\’,输出’,\r回车(反斜杠)
+</code></pre>
+<p>7.数据类型的转换</p>
+<pre><code>int()将括号里的内容(数值型)转换成整数，舍去小数点后面的内容
+
+str()将括号里的内容(任意)转换成字符串
+
+float()将括号里的内容(数值型)转换成浮点数
+</code></pre>
+<h1 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4. 运算符"></a>4. 运算符</h1><h2 id="4-1-算术运算"><a href="#4-1-算术运算" class="headerlink" title="4.1 算术运算"></a>4.1 算术运算</h2><p>+，-，*，&#x2F; 加减乘除</p>
+<p>%求模（求余数）</p>
+<p><strong>幂运算【例 2</strong>3  &gt;&gt;&gt;8】</p>
+<p>优先级：幂运算&gt;乘除，求余&gt;加减</p>
+<h2 id="4-2-比较运算"><a href="#4-2-比较运算" class="headerlink" title="4.2 比较运算"></a>4.2 比较运算</h2><blockquote>
+<p>, &gt;&#x3D;,&#x3D;&#x3D;大于，大于等于，等于</p>
+</blockquote>
+<h2 id="4-3-逻辑运算"><a href="#4-3-逻辑运算" class="headerlink" title="4.3 逻辑运算"></a>4.3 逻辑运算</h2><p>not 逻辑非，非真即假，非假即真</p>
+<p>例：not 1   &gt;&gt;&gt;False</p>
+<p>and 逻辑与  两边条件为真，即为真</p>
+<p>例：1 and 10  &gt;&gt;&gt;10（都为真时输出后面的数）</p>
+<p>or 逻辑或  两边只要有一边为真，即为真</p>
+<p>例：1 or 0   &gt;&gt;&gt;1</p>
+<pre><code>     1 or 2  &gt;&gt;&gt;1 (都为真时输出前面面的数）
+</code></pre>
+<p>【除了0，空字符串，空列表，空字典这种都为真】</p>
+<h2 id="4-1-赋值运算"><a href="#4-1-赋值运算" class="headerlink" title="4.1  赋值运算"></a>4.1  赋值运算</h2><p>a&#x3D;a+1</p>
+<p>a+&#x3D;1</p>
+<h1 id="五-内置函数"><a href="#五-内置函数" class="headerlink" title="五. 内置函数"></a>五. 内置函数</h1><p>round（）返回浮点数四舍五入的值</p>
+<p>random.randint（a,b）产生一个a到b的随机数</p>
+<p>eval（）返回表达式的计算结果</p>
+<p>type()函数查询数据类型</p>
+<p>pow（x，y）返回x的y次方</p>
+<p>len（）返回字符串长度</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/23/class_one/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="answer_yym">
+      <meta itemprop="description" content="且随疾风前行">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="山河无恙 烟火寻常">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/23/class_one/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-23 11:21:34 / 修改时间：12:55:17" itemprop="dateCreated datePublished" datetime="2024-03-23T11:21:34+08:00">2024-03-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="01、打印"><a href="#01、打印" class="headerlink" title="01、打印"></a>01、打印</h1><p>print(“hello python”)</p>
+<h1 id="02、变量"><a href="#02、变量" class="headerlink" title="02、变量"></a>02、变量</h1><p>一次存一个，<br>声明，拿出来存储罐，开辟一个空间<br>防止混淆，贴标签，命名<br>图示：<br>a &#x3D; 123<br>print(a)</p>
+<p> 注意：是赋值，从右往左读<br> 可以改变的量<br>a &#x3D; 456<br>print(a)</p>
+<p>命名规则<br>字母、数字、下划线（数字不能首位，关键字）<br>驼峰，蛇形your_name</p>
+<p>shell 模式</p>
+<h1 id="03、四则算数"><a href="#03、四则算数" class="headerlink" title="03、四则算数"></a>03、四则算数</h1><p>加减乘除余幂<br>print(1 + 1)<br>变量四则<br>变量自运算<br>a +&#x3D; 1<br>温度转换器，夏天40度高温热晕，球华氏度<br>F &#x3D; 9 &#x2F; 5 x C + 32</p>
+<h1 id="04、-个性输出"><a href="#04、-个性输出" class="headerlink" title="04、 个性输出"></a>04、 个性输出</h1><p>print(12, 34, 56)<br>默认空格隔开，<br>print(12, 34, 56, sep&#x3D;’-‘)<br>print(12, end&#x3D;’ <em>-</em> ‘)<br>print(34)</p>
+<p>转义<br>print(“&quot;“)<br> 只用一行输出：<br>**<br>  **<br>   **<br>print(“**\n  **\n    **”)</p>
+<h1 id="05、我的身份，类型格式"><a href="#05、我的身份，类型格式" class="headerlink" title="05、我的身份，类型格式"></a>05、我的身份，类型格式</h1><p>数据类型<br>整型     int() 将合法字符串数值或浮点数转成整数<br>字符串型 str()   将任意类型转成字符串型<br>浮点型   float() 将合法字符数值或整数转成浮点数<br>布尔型   bool()  将任意类型转成bool型</p>
+<p>print(type(False))<br>注意大写，<br>条件表达式</p>
+<p>b &#x3D; “123”<br>print(b + 4)<br>b &#x3D; int(“123”)<br>print(b + 4)<br>能转的才能转。<br>字符串拼接</p>
+<p>格式输出：<br>%d,%f,%s<br>name &#x3D; “小明”<br>age &#x3D; 3.123456<br>height &#x3D; 1.23456789<br>print(“我的年龄是：” + name + “ 我的年龄是：” + str(age) +” 我的身高是：” + str(height))<br>print(“我的年龄是：%s, 我的年龄是：%d, 我的身高是：%10.2f” % (name, age, height))</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/12/blog-two-post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -415,7 +704,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
