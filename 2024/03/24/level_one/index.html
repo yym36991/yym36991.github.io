@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="0. 考试环境视频指导链接考试模拟平台考试入口 一. 海龟代码(基本考过都在下面) 1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None, bg&#x3D;None)， 参数分别为画布的宽(单位像素), 高, 背景颜色。 2.turtle.setup(width&#x3D;0.5, height&#x3D;0.75, start">
+  <meta name="description" content="0. 考试环境 一. 海龟代码 二. python基础知识 三. 数据类型 4. 运算符 4.1 算术运算 4.2 比较运算 4.3 逻辑运算 4.1 赋值运算   五. 内置函数    0. 考试环境视频指导链接考试模拟平台考试入口 一. 海龟代码(基本考过都在下面) 1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一级知识大纲">
 <meta property="og:url" content="http://example.com/2024/03/24/level_one/index.html">
 <meta property="og:site_name" content="山河无恙 烟火寻常">
-<meta property="og:description" content="0. 考试环境视频指导链接考试模拟平台考试入口 一. 海龟代码(基本考过都在下面) 1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None, bg&#x3D;None)， 参数分别为画布的宽(单位像素), 高, 背景颜色。 2.turtle.setup(width&#x3D;0.5, height&#x3D;0.75, start">
+<meta property="og:description" content="0. 考试环境 一. 海龟代码 二. python基础知识 三. 数据类型 4. 运算符 4.1 算术运算 4.2 比较运算 4.3 逻辑运算 4.1 赋值运算   五. 内置函数    0. 考试环境视频指导链接考试模拟平台考试入口 一. 海龟代码(基本考过都在下面) 1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-24T01:40:12.828Z">
-<meta property="article:modified_time" content="2024-03-24T02:32:58.653Z">
+<meta property="article:modified_time" content="2024-03-24T02:38:11.092Z">
 <meta property="article:author" content="answer_yym">
 <meta name="twitter:card" content="summary">
 
@@ -215,7 +215,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-03-24 09:40:12 / 修改时间：10:32:58" itemprop="dateCreated datePublished" datetime="2024-03-24T09:40:12+08:00">2024-03-24</time>
+              <time title="创建时间：2024-03-24 09:40:12 / 修改时间：10:38:11" itemprop="dateCreated datePublished" datetime="2024-03-24T09:40:12+08:00">2024-03-24</time>
             </span>
 
           
@@ -229,8 +229,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="0-考试环境"><a href="#0-考试环境" class="headerlink" title="0. 考试环境"></a>0. 考试环境</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1N44y1z7CR/">视频指导链接</a><br><a target="_blank" rel="noopener" href="http://www.wancode.net/?bd_vid=11806638272777716734#/">考试模拟平台</a><br><a target="_blank" rel="noopener" href="https://www.qceit.org.cn/bos/login.html?d=20220912">考试入口</a></p>
-<h1 id="一-海龟代码"><a href="#一-海龟代码" class="headerlink" title="一. 海龟代码"></a>一. 海龟代码</h1><p>(基本考过都在下面)</p>
+        <!-- toc -->
+
+<ul>
+<li><a href="#0-%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83">0. 考试环境</a></li>
+<li><a href="#%E4%B8%80-%E6%B5%B7%E9%BE%9F%E4%BB%A3%E7%A0%81">一. 海龟代码</a></li>
+<li><a href="#%E4%BA%8C-python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86">二. python基础知识</a></li>
+<li><a href="#%E4%B8%89-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">三. 数据类型</a></li>
+<li><a href="#4-%E8%BF%90%E7%AE%97%E7%AC%A6">4. 运算符</a><ul>
+<li><a href="#41-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97">4.1 算术运算</a></li>
+<li><a href="#42-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97">4.2 比较运算</a></li>
+<li><a href="#43-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97">4.3 逻辑运算</a></li>
+<li><a href="#41-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97">4.1 赋值运算</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%94-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0">五. 内置函数</a></li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="0-考试环境">0. 考试环境</span></h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1N44y1z7CR/">视频指导链接</a><br><a target="_blank" rel="noopener" href="http://www.wancode.net/?bd_vid=11806638272777716734#/">考试模拟平台</a><br><a target="_blank" rel="noopener" href="https://www.qceit.org.cn/bos/login.html?d=20220912">考试入口</a></p>
+<h1><span id="一-海龟代码">一. 海龟代码</span></h1><p>(基本考过都在下面)</p>
 <p>1.turtle.screensize(canvwidth&#x3D;None, canvheight&#x3D;None, bg&#x3D;None)，</p>
 <p>参数分别为画布的宽(单位像素), 高, 背景颜色。</p>
 <p>2.turtle.setup(width&#x3D;0.5, height&#x3D;0.75, startx&#x3D;None, starty&#x3D;None)宽高xy</p>
@@ -264,7 +282,7 @@
 <p>26.turtle.showturtle() #显示画笔的turtle形状</p>
 <p>27.turtle.shape(‘turtle’)：设置小乌龟的形状为乌龟， arrow：箭头，turtle：龟，circle：圆，square：正方形，triangle：三角形，classic：经典</p>
 <p>28.turtle.stamp()在当前位置印制小乌龟形状（光标指针形状），返回印章id</p>
-<h1 id="二-python基础知识"><a href="#二-python基础知识" class="headerlink" title="二. python基础知识"></a>二. python基础知识</h1><p>1.python基础界面以及操作，保存，新建文件</p>
+<h1><span id="二-python基础知识">二. python基础知识</span></h1><p>1.python基础界面以及操作，保存，新建文件</p>
 <p>2.python提示符 ：</p>
 <pre><code> &gt;&gt;&gt;提示符，格式缩进（交互模式运行符）
 </code></pre>
@@ -327,7 +345,7 @@ Jupyter Notebook...
 </blockquote>
 </blockquote>
 </blockquote>
-<h1 id="三-数据类型"><a href="#三-数据类型" class="headerlink" title="三. 数据类型"></a>三. 数据类型</h1><p>1.可变数据类型：</p>
+<h1><span id="三-数据类型">三. 数据类型</span></h1><p>1.可变数据类型：</p>
 <pre><code>list，dictionary，set
 </code></pre>
 <p>  不可变数据类型：</p>
@@ -367,14 +385,14 @@ str()将括号里的内容(任意)转换成字符串
 
 float()将括号里的内容(数值型)转换成浮点数
 </code></pre>
-<h1 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4. 运算符"></a>4. 运算符</h1><h2 id="4-1-算术运算"><a href="#4-1-算术运算" class="headerlink" title="4.1 算术运算"></a>4.1 算术运算</h2><p>+，-，*，&#x2F; 加减乘除</p>
+<h1><span id="4-运算符">4. 运算符</span></h1><h2><span id="41-算术运算">4.1 算术运算</span></h2><p>+，-，*，&#x2F; 加减乘除</p>
 <p>%求模（求余数）</p>
 <p><strong>幂运算【例 2</strong>3  &gt;&gt;&gt;8】</p>
 <p>优先级：幂运算&gt;乘除，求余&gt;加减</p>
-<h2 id="4-2-比较运算"><a href="#4-2-比较运算" class="headerlink" title="4.2 比较运算"></a>4.2 比较运算</h2><blockquote>
+<h2><span id="42-比较运算">4.2 比较运算</span></h2><blockquote>
 <p>, &gt;&#x3D;,&#x3D;&#x3D;大于，大于等于，等于</p>
 </blockquote>
-<h2 id="4-3-逻辑运算"><a href="#4-3-逻辑运算" class="headerlink" title="4.3 逻辑运算"></a>4.3 逻辑运算</h2><p>not 逻辑非，非真即假，非假即真</p>
+<h2><span id="43-逻辑运算">4.3 逻辑运算</span></h2><p>not 逻辑非，非真即假，非假即真</p>
 <p>例：not 1   &gt;&gt;&gt;False</p>
 <p>and 逻辑与  两边条件为真，即为真</p>
 <p>例：1 and 10  &gt;&gt;&gt;10（都为真时输出后面的数）</p>
@@ -383,9 +401,9 @@ float()将括号里的内容(数值型)转换成浮点数
 <pre><code>     1 or 2  &gt;&gt;&gt;1 (都为真时输出前面面的数）
 </code></pre>
 <p>【除了0，空字符串，空列表，空字典这种都为真】</p>
-<h2 id="4-1-赋值运算"><a href="#4-1-赋值运算" class="headerlink" title="4.1  赋值运算"></a>4.1  赋值运算</h2><p>a&#x3D;a+1</p>
+<h2><span id="41-赋值运算">4.1  赋值运算</span></h2><p>a&#x3D;a+1</p>
 <p>a+&#x3D;1</p>
-<h1 id="五-内置函数"><a href="#五-内置函数" class="headerlink" title="五. 内置函数"></a>五. 内置函数</h1><p>round（）返回浮点数四舍五入的值</p>
+<h1><span id="五-内置函数">五. 内置函数</span></h1><p>round（）返回浮点数四舍五入的值</p>
 <p>random.randint（a,b）产生一个a到b的随机数</p>
 <p>eval（）返回表达式的计算结果</p>
 <p>type()函数查询数据类型</p>
@@ -468,7 +486,7 @@ float()将括号里的内容(数值型)转换成浮点数
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-%E8%80%83%E8%AF%95%E7%8E%AF%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">0. 考试环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-%E6%B5%B7%E9%BE%9F%E4%BB%A3%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">一. 海龟代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">3.</span> <span class="nav-text">二. python基础知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">三. 数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">4. 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97"><span class="nav-number">5.1.</span> <span class="nav-text">4.1 算术运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97"><span class="nav-number">5.2.</span> <span class="nav-text">4.2 比较运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97"><span class="nav-number">5.3.</span> <span class="nav-text">4.3 逻辑运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97"><span class="nav-number">5.4.</span> <span class="nav-text">4.1  赋值运算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="nav-number">6.</span> <span class="nav-text">五. 内置函数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">0. 考试环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">一. 海龟代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">二. python基础知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">三. 数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">5.</span> <span class="nav-text">4. 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">5.1.</span> <span class="nav-text">4.1 算术运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">5.2.</span> <span class="nav-text">4.2 比较运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">5.3.</span> <span class="nav-text">4.3 逻辑运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">5.4.</span> <span class="nav-text">4.1  赋值运算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">6.</span> <span class="nav-text">五. 内置函数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
