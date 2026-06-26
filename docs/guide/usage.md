@@ -17,15 +17,23 @@ cd /Users/a58/Desktop/notes_site
 npm run dev
 ```
 
-## 同步笔记
+## 写笔记
 
-网站不会直接改动原始笔记目录。`npm run sync` 会把 `/Users/a58/Desktop/golang_and_linux` 中指定目录下的 Markdown 文件复制到 `docs/notes`。
+网站的笔记源目录是：
 
-```bash
-npm run sync
+```text
+docs/notes
 ```
 
-`npm run dev` 和 `npm run build` 会自动先执行同步。
+以后不要再把新笔记写到 `/Users/a58/Desktop/golang_and_linux`。直接在 `docs/notes` 下按分类新建 Markdown 文件即可。
+
+如果只想重新生成笔记索引，可以执行：
+
+```bash
+npm run update-index
+```
+
+`npm run dev` 和 `npm run build` 会自动先更新索引。
 
 ## 自动提交
 

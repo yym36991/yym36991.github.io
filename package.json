@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npm run sync && vitepress dev docs --host 127.0.0.1",
-    "build": "npm run sync && vitepress build docs",
+    "dev": "npm run update-index && vitepress dev docs --host 127.0.0.1",
+    "build": "npm run update-index && vitepress build docs",
     "preview": "vitepress preview docs --host 127.0.0.1",
-    "sync": "node scripts/sync-notes.mjs",
+    "update-index": "node scripts/update-notes-index.mjs",
     "git:auto-commit": "bash scripts/auto-commit-notes.sh"
   },
   "devDependencies": {

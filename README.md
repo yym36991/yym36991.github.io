@@ -15,19 +15,15 @@ npm run dev
 http://127.0.0.1:5173
 ```
 
-## 同步笔记
+## 写笔记
 
-```bash
-npm run sync
+所有笔记都直接保存在：
+
+```text
+docs/notes
 ```
 
-默认从 `/Users/a58/Desktop/golang_and_linux` 同步 Markdown 文件到 `docs/notes`。
-
-如需临时切换来源：
-
-```bash
-NOTES_SOURCE_ROOT=/path/to/notes npm run sync
-```
+在这个目录下新建或编辑 Markdown 文件后，`npm run dev` 和 `npm run build` 会自动更新笔记索引。
 
 ## 构建
 
